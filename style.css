@@ -30,7 +30,7 @@
     --color-l: #3c80da;
     --color-nav: #f7f1e3;
     --primary-color: #ffffff;
-    --color-bor: #ccc;
+    --color-bor: #9c9c9c;
     --color-form: #aaaaaa;
 }
 
@@ -230,6 +230,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: auto;
+    column-gap: 5px;
 }
 
 .contato-input {
@@ -243,6 +244,7 @@ body {
     font-size: 18px;
     background-color: var(--color-form);
     border: 1px solid var(--color-bor);
+    border-radius: 10px;
 }
 
 .contato-input textarea {
@@ -250,6 +252,17 @@ body {
     font-size: 18px;
     background-color: var(--color-form);
     border: 1px solid var(--color-bor);
+    border-radius: 10px;
+}
+
+.contato-formulario button{
+    border: 1px solid var(--color-d);
+    width: 120px;
+    align-self: center;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: var(--color-m);
 }
 
 .rodape {
