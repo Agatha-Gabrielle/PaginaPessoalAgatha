@@ -1,0 +1,286 @@
+:root{
+    --color-m: #968ab6;
+    --color-s: #e5deff;
+    --color-s2: #ede7fc;
+    --color-ee: #fbf8ff;
+    --color-d: #a699c9;
+    --color-r: #d8e8ec;
+    --color-t: #240cad;
+    --color-logo: #3a3939;
+    --color-snome: #120f50;
+    --color-tt: #424242;
+    --color-l: #2F80ED;
+    --color-nav: #f7f1e3;
+    --primary-color: #000000;
+    --color-bor: #ccc;
+    --color-form: #ffffff;
+}
+
+.darkmode{
+    --color-m: #483a82;
+    --color-s: #120f50;
+    --color-s2: #230f50;
+    --color-ee: #2a282c;
+    --color-d: #4e4183;
+    --color-r: #002a21;
+    --color-t: #07041b;
+    --color-logo: #000000;
+    --color-snome: #003a83;
+    --color-tt: #b4b4b4;
+    --color-l: #3c80da;
+    --color-nav: #f7f1e3;
+    --primary-color: #ffffff;
+    --color-bor: #ccc;
+    --color-form: #aaaaaa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Serif", serif;
+}
+
+#theme-switch{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: 50%;
+    border-color: var(--color-s);
+    background-color: var(--color-s);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch svg{
+    fill: var(--color-logo);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-m);
+    padding: 25px;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    font-size: 24px;
+    color:var(--color-logo);
+}
+
+.navegacao ul {
+    list-style: none;
+    display: flex;
+}
+
+.navegacao ul li {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navegacao ul li a {
+    color: var(--color-nav);
+    text-decoration: none;
+}
+
+#sobre {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 8% 60px;
+    background-image: linear-gradient(var(--color-s), var(--color-s2));
+}
+
+.sobre-texto {
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.sobre-imagem {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    align-self: center;
+    object-fit: cover;
+}
+
+.sobre-nome {
+    color: var(--color-snome);
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.sobre-descricao {
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+#extracurriculares {
+    padding: 50px 100px;
+    background-color: var(--color-ee);
+}
+
+.extracurriculares-titulo {
+    color: var(--color-t);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.extracurriculares-lista {
+   width: fit-content;
+   margin: 5px 10%;
+}
+
+.extracurriculares-lista h3 {
+    font-size: 20px;
+    color: var(--color-tt);
+    margin-bottom: 10px;
+    width: 180px;
+}
+
+.extracurriculares-lista a {
+    color: var(--color-l);
+    font-size: 20px;
+    margin-bottom: 15px;
+} 
+
+.extracurriculares-lista p {
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+#dicas {
+    background-color: var(--color-d);
+    padding: 50px 100px;
+}
+
+.dicas-titulo {
+    color: var(--color-t);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.dicas-lista {
+    width: fit-content;
+    margin: 5px 10%;
+}
+
+.dicas-lista h3 {
+    font-size: 20px;
+    color: var(--color-tt);
+    margin-bottom: 10px;
+    width: 180px;
+}
+
+.dicas-lista a {
+    color: var(--color-l);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.dicas-lista p {
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+#contato {
+    padding: 50px 150px;
+    background-color: var(--color-ee);
+}
+
+.contato-titulo {
+    color: var(--color-t);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contato-formulario {
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+}
+
+.contato-grupoinput {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.contato-input {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.contato-input input {
+    padding: 10px;
+    font-size: 18px;
+    background-color: var(--color-form);
+    border: 1px solid var(--color-bor);
+}
+
+.contato-input textarea {
+    padding: 10px;
+    font-size: 18px;
+    background-color: var(--color-form);
+    border: 1px solid var(--color-bor);
+}
+
+.rodape {
+    background-color: var(--color-r);
+    display: flex;
+    padding: 30px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape-contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape-contatos a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.rodape-contatos svg {
+    vertical-align: middle;
+    width: 40px;
+    fill: var(--primary-color);
+}
+
+.logo-minas {
+    height: 80px;
+}
+
+
